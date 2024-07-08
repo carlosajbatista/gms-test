@@ -1,0 +1,27 @@
+[
+    {
+        "titulo" : "Matrix",
+        "ano" : "1999",
+        "descrição" : "Matrix, dirigido por Lana e Lilly Wachowski, revolucionou o gênero de ficção científica com suas ideias inovadoras sobre a realidade virtual e a natureza da existência humana, além de sua ação e efeitos visuais revolucionários."
+    },
+    {
+        "titulo" : "Jurassic Park",
+        "ano" : "1993",
+        "descrição" : "O filme Jurassic Park, de Steven Spielberg, é importante no gênero de ficção científica por seu impacto na cultura popular e pelo uso revolucionário de efeitos visuais, que permitiu a criação de dinossauros realistas nunca antes vistos na tela."
+    },
+    {
+        "titulo" : "Alien",
+        "ano" : "1979",
+        "descrição" : "Alien, o 8º Passageiro, de Ridley Scott, lançou as bases da franquia Alien e, com sua abordagem inovadora do terror de ficção científica, criou um ambiente claustrofóbico e uma criatura icônica que resistiram ao teste do tempo."
+    },
+    {
+        "titulo" : "Inception",
+        "ano" : "2010",
+        "descrição" : "A Origem, a complexa trama de sonho/realidade orquestrada por Christopher Nolan, é admirada pelos fãs do gênero por sua narrativa inovadora e efeitos visuais de ponta que desafiaram as expectativas do público e redefiniram o cinema de ficção científica contemporâneo."
+    },
+    {
+        "titulo" : "Back to the Future",
+        "ano" : "1985",
+        "descrição" : "De Volta para o Futuro, de Robert Zemeckis, foi notável por sua premissa original de viagem no tempo, sua combinação de comédia e aventura, além de sua capacidade de entreter gerações de espectadores com seu roteiro espirituoso e personagens carismáticos."
+    }
+]
