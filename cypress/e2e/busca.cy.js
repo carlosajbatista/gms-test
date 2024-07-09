@@ -2,16 +2,12 @@
 
 describe('US-001 - Funcionalidade de busca de filmes', () => {
     beforeEach(() => {
-      cy.visit('/')
+        cy.visit('/')
     });
 
-/*  cy.get('#clear-button')
-        cy.get('#results-section > p') //mensagem erro
-        cy.get('#results-section') //bloco de resultados
-        cy.get('#results-section > :nth-child(x)') //resultado x - numero do filme na lista
-        cy.get(':nth-child(x) > h3')//titulo x - numero do filme na lista   
-        cy.get('#results-section > :nth-child(x) > p')//ano x - numero do filme na lista
-        cy.get('#results-section > :nth-child(x) > img')//capa x - numero do filme na lista    */    
+    afterEach(() => {
+        cy.screenshot()
+    });
 
     it('Deve fazer uma busca com sucesso', () => {
         cy.get('#search-input').type('Matrix')
@@ -30,8 +26,8 @@ describe('US-001 - Funcionalidade de busca de filmes', () => {
     })
 
     it('Deve fazer uma busca com sucesso de uma lista', () => {
-        cy.fixture('filmes').then((filmes) =>{
-            
+        cy.fixture('filmes').then((filmes) => {
+
             cy.get('#search-input').type(filmes[0].titulo)
             cy.get('#search-button').click()
             cy.get('#results-section').should('contain', filmes[0].titulo)
@@ -39,8 +35,8 @@ describe('US-001 - Funcionalidade de busca de filmes', () => {
     })
 
     it('Deve fazer uma busca com sucesso de uma lista inteira', () => {
-        cy.fixture('filmes').each((filmes) =>{
-            
+        cy.fixture('filmes').each((filmes) => {
+
             cy.get('#search-input').clear().type(filmes.titulo)
             cy.get('#search-button').click()
             cy.get('#results-section').should('contain', filmes.titulo)
