@@ -80,7 +80,7 @@ describe('US-012 - Funcionalidade de cadastro de membros', () => {
     var email = `carlos${Date.now()}@mail.com`
     cy.preencherCadastro('Carlos', 'Batista', email, '4799988556622', '');
 
-    cy.get('#signup-response').should('contain', 'Senha não pode estar vazia')
+    cy.get('#signup-response').should('contain', ' is not allowed to be empty')
   })
   it('Nao deve fazer o cadastro quando senha fraca', () => {
     var email = `carlos${Date.now()}@mail.com`
